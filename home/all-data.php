@@ -66,7 +66,7 @@ $result= $stmt->fetchAll(PDO::FETCH_ASSOC);
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="dashboard.php" class="logo d-flex align-items-center">
         <span class="d-none d-lg-block">Guguk Aware</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -127,7 +127,7 @@ $result= $stmt->fetchAll(PDO::FETCH_ASSOC);
       <li class="nav-item">
         <a class="nav-link " href="dashboard.php">
           <i class="bi bi-grid"></i>
-          <span>All Data</span>
+          <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 

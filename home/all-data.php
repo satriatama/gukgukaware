@@ -186,11 +186,11 @@ $result= $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <tbody>
                         <?php if (!empty($result)) : ?>
                         <?php foreach ($result as $index => $row) : ?>
-                            <tr onclick="window.location.href='../home/detail.php?Id=<?php echo $row['Id']; ?>'" style="cursor: pointer;">
-                                <th><?php echo $index + 1; ?></th>
-                                <td><?php echo htmlspecialchars($row['store_name']); ?></td>
-                                <td><?php echo htmlspecialchars($row['location']); ?></td>
-                                <td>
+                            <tr>
+                                <th onclick="window.location.href='../home/detail.php?Id=<?php echo $row['Id']; ?>'" style="cursor: pointer;"><?php echo $index + 1; ?></th>
+                                <td onclick="window.location.href='../home/detail.php?Id=<?php echo $row['Id']; ?>'" style="cursor: pointer;"><?php echo htmlspecialchars($row['store_name']); ?></td>
+                                <td onclick="window.location.href='../home/detail.php?Id=<?php echo $row['Id']; ?>'" style="cursor: pointer;"><?php echo htmlspecialchars($row['location']); ?></td>
+                                <td onclick="window.location.href='../home/detail.php?Id=<?php echo $row['Id']; ?>'" style="cursor: pointer;">
                                     <?php if ($row['status'] == 'Opened') : ?>
                                     <span class='badge bg-success'>Opened</span>
                                     <?php elseif ($row['status'] == 'Closed') : ?>
@@ -199,9 +199,9 @@ $result= $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <span class='badge bg-warning'>New Location</span>
                                     <?php endif; ?>
                                 </td>
-                                <td><?php echo htmlspecialchars($row['latitude']); ?></td>
-                                <td><?php echo htmlspecialchars($row['longitude']); ?></td>
-                                <td><?php echo htmlspecialchars($row['last_changed']); ?></td>
+                                <td onclick="window.location.href='../home/detail.php?Id=<?php echo $row['Id']; ?>'" style="cursor: pointer;"><?php echo htmlspecialchars($row['latitude']); ?></td>
+                                <td onclick="window.location.href='../home/detail.php?Id=<?php echo $row['Id']; ?>'" style="cursor: pointer;"><?php echo htmlspecialchars($row['longitude']); ?></td>
+                                <td onclick="window.location.href='../home/detail.php?Id=<?php echo $row['Id']; ?>'" style="cursor: pointer;"><?php echo htmlspecialchars($row['last_changed']); ?></td>
                                 <td>
                                     <div>
                                     <button type="button" class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" 

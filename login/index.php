@@ -95,7 +95,7 @@ session_start();
                             
                             <div class="text-center">
                                 <span class="text-sm text-gray-600">Belum punya akun? </span>
-                                <a href="register.php" class="text-sm text-gray-900 hover:underline">Daftar</a>
+                                <a href="registration.php" class="text-sm text-gray-900 hover:underline">Daftar</a>
                             </div>
                         </div>
                     </form>

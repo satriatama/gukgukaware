@@ -19,12 +19,12 @@
         </div>
         <div class="bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-xl w-full max-w-md">
             <!-- Login Form -->
-            <form id="loginForm" class="space-y-6">
+            <form id="loginForm" class="space-y-6" action="regist_action.php" method="POST">
                 <!-- Name Input -->
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                    <input type="text" 
-                           id="name" 
+                    <input type="email" 
+                           id="email" 
                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                            required>
                 </div>
